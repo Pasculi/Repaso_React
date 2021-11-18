@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Productos from './components/Productos';
-import Prueba from './views/Prueba';
+import Carrito from './views/Carrito';
+
 function App() {
 
   //Crear estado de productos
@@ -39,7 +40,7 @@ function App() {
   const fecha = new Date().getFullYear();
 
   return (
-    <>
+    <div>
       <Header titulo='Tienda Virtual' />
       <h1>Lista de Productos</h1>
       {productos.map(producto => (
@@ -52,10 +53,13 @@ function App() {
         />
         
       ))}
-      <Prueba />
+      <Carrito 
+        carrito={carrito}
+      />
+      
       <Footer fecha={fecha} />
 
-    </>
+    </div>
   );
 }
 
