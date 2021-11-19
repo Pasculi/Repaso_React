@@ -1,0 +1,14 @@
+.carrito{
+    position:fixed;
+    top:0;
+    right: 0;
+    background-color:antiquewhite;
+    width: 400px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.celula{
+    width: 400px;
+    /* height:300px; */
+}
