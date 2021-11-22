@@ -1,16 +1,16 @@
 import React from 'react'
 import Productos from '../components/Producto'
 
-
+//Creamos el comonente de carrito de compras
 
 const Carrito = ({ carrito, agregarProducto }) => {
     return (
         <div className="carrito">
-            <h1>Tu Carrito de compras</h1>
+            <h2>Tu Carrito de compras</h2>
 
             {carrito.length === 0
                 ?
-                <p>No hay elementos en el carrito</p>
+                <p className="vacio">No hay elementos en el carrito</p>
                 :
                 carrito.map(producto => (
                     <Productos
