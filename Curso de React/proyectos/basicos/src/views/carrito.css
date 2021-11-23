@@ -2,13 +2,27 @@
     position:fixed;
     top:0;
     right: 0;
-    background-color:antiquewhite;
+    background-color:rgb(15, 185, 236);
     width: 400px;
     padding-left: 10px;
     padding-bottom: 10px;
+    width: 600px;
+
 }
 
-.celula{
-    width: 400px;
+.img{
+    width: 200px;
+    border-radius: 50%;
     /* height:300px; */
+}
+.vacio{
+    color:red;
+    font-weight: 800;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.precio{
+    font-weight: 800;
+    color:blue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
 }

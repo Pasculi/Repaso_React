@@ -1,13 +1,13 @@
 import React from 'react'
 
 const Producto = ({ producto, carrito, agregarProducto, productos }) => {
-    const { nombre, precio, id } = producto;
+    const { nombre, precio, id, foto } = producto;
 
     //Agregar producto al carrito
     const seleccionarProducto = (id) => {
-        const producto = productos.filter(producto => producto.id === id)[0];
+        const producto = productos.filter(producto => producto.id === id)[0]; // Asi accedemos al objeto [0]
         agregarProducto([
-            ...carrito,
+            ...carrito, //Creamos una copia de carrito o clonamos, y le vamos adicionando producto
             producto]);
 
     }
@@ -22,8 +22,9 @@ const Producto = ({ producto, carrito, agregarProducto, productos }) => {
 
     return (
         <div>
-            <h1> {nombre}</h1>
-            <p> ${precio}</p>
+            <h2> {nombre}</h2>
+            <img className='img' src={foto} alt={nombre}/>
+            <p className="precio"> U&#36;{precio}</p>
 
             {productos
                 ?
