@@ -1,4 +1,4 @@
-
+import './index.js'
 
 function App() {
   return (
