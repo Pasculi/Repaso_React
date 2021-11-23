@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Productos from './components/Producto';
+import Productos from './views/Producto';
 import Carrito from './views/Carrito';
 import Celula from './views/Celula';
 import './views/carrito.css'

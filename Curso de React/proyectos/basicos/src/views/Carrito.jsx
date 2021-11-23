@@ -1,5 +1,5 @@
 import React from 'react'
-import Productos from '../components/Producto'
+import Productos from './Producto'
 
 
 
