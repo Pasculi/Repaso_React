@@ -6,9 +6,9 @@ import './index.js'
 function App() {
 
 
-  //Arreglo de citas 
+  //Arreglo de citas
 
-  const [citas, guardarCitas] = useState('');
+  const [citas, guardarCitas] = useState([]);
 
   //Funcion que tome las citas actuales y agregue la nueva
 
@@ -28,13 +28,12 @@ function App() {
           </div>
           <div className='one-half column'>
             <h2>Administra tus Citas</h2>
-            {citas.map(cita =>(
+            {citas.map(cita => (
               <Cita
                 key={cita.id}
                 cita={cita}
               />
             ))}
-
           </div>
         </div>
       </div>
