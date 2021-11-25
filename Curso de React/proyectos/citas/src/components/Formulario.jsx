@@ -18,9 +18,9 @@ const Formulario = ({ crearCita }) => {
             ...cita,
             [e.target.name]: e.target.value
         })
-    };
+    }
     //Extraemos los valores
-    const { mascota, propietario, fecha, hora, sintoma } = cita;
+    const { mascota, propietario, fecha, hora, sintomas } = cita;
 
     //Cuando el usuario presiona agregar cita
     const submitCita = (e) => {
@@ -29,7 +29,7 @@ const Formulario = ({ crearCita }) => {
 
         //Validar datos
 
-        if (mascota === '' || propietario === '' || fecha === '' || hora === '' || sintoma === '') {
+        if (mascota === '' || propietario === '' || fecha === '' || hora === '' || sintomas === '') {
             actualizarError(true);
             return;
         }
@@ -98,7 +98,7 @@ const Formulario = ({ crearCita }) => {
                     className="u-full-width"
                     name="sintomas"
                     onChange={actualizarState}
-                    value={sintoma}
+                    value={sintomas}
                 ></textarea>
                 <button className="u-full-width button-primary">Agregar cita</button>
             </form>

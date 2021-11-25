@@ -1,11 +1,21 @@
 import React from 'react'
 
-const Cita = () => {
-
+const Cita = ({cita, eliminarCita}) => {
+    //Extraemos los valores
+    const { mascota, propietario, fecha, hora, sintomas } = cita;
+    return(
     <div className="cita">
-        <p>Mascota: <span></span></p>
-    </div>
+        <p>Mascota: <span>{mascota}</span></p>
+        <p>Dueño: <span>{propietario}</span></p>
+        <p>Fecha: <span>{fecha}</span></p>
+        <p>Nora: <span>{hora}</span></p>
+        <p>Sintomas: <span>{sintomas}</span></p>
+        <button
+        className="button eliminar u-full-width"
+        onClick={() => eliminarCita(cita.id)}>Eliminar &times;</button>
 
+    </div>
+    )
 }
 
 export default Cita
