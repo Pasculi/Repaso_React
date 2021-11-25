@@ -77,7 +77,7 @@ const Formulario = ({ crearCita }) => {
                     onChange={actualizarState}
                     value={propietario}
                 />
-                <label>Nombre Mascota</label>
+                <label>Fecha</label>
                 <input
                     type="date"
                     name="fecha"
